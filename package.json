@@ -1,0 +1,19 @@
+{
+  "name": "loopback-edge-arangodb",
+  "version": "0.1.0",
+  "description": "A mixin to handle arangoDB edges for loopback Models",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbatista/loopback-edge-arangodb.git"
+  },
+  "author": "Matteo Padovano <mrba7ista@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrbatista/loopback-edge-arangodb/issues"
+  },
+  "homepage": "https://github.com/mrbatista/loopback-edge-arangodb#readme"
+}
