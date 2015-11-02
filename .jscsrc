@@ -18,7 +18,11 @@
   "disallowTrailingWhitespace": true,
   "maximumLineLength": 120,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
-  "requireCapitalizedComments": { "allExcept": ["jshint"] },
+  "requireCapitalizedComments": {
+    "allExcept": [
+      "jshint"
+    ]
+  },
   "requireCapitalizedConstructors": true,
   "requireCurlyBraces": false,
   "requireSpaceAfterKeywords": [

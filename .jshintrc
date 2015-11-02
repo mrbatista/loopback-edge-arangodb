@@ -1,22 +1,22 @@
 {
-    "node": true,
-    "browser": true,
-    "mocha": true,
-    "esnext": true,
-    "bitwise": true,
-    "curly": false,
-    "eqeqeq": true,
-    "latedef": true,
-    "noarg": true,
-    "quotmark": "single",
-    "undef": true,
-    "unused": true,
-    "eqnull" : true,
-    "nonew": true,
-    "strict": true,
-    "smarttabs": true,
-    "globals": {
-        "describe": true,
-        "it": true
-    }
+  "node": true,
+  "browser": true,
+  "mocha": true,
+  "esnext": true,
+  "bitwise": true,
+  "curly": false,
+  "eqeqeq": true,
+  "latedef": true,
+  "noarg": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "eqnull": true,
+  "nonew": true,
+  "strict": true,
+  "smarttabs": true,
+  "globals": {
+    "describe": true,
+    "it": true
+  }
 }
