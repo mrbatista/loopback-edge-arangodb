@@ -4,7 +4,7 @@
   "description": "A mixin to handle arangoDB edges for loopback Models",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/mrbatista/loopback-edge-arangodb/issues"
   },
-  "homepage": "https://github.com/mrbatista/loopback-edge-arangodb#readme"
+  "homepage": "https://github.com/mrbatista/loopback-edge-arangodb#readme",
+  "dependencies": {
+    "depd": "^1.1.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "loopback": "^2.22.2",
+    "mocha": "^2.3.3",
+    "should": "^7.1.1"
+  }
 }
