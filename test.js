@@ -8,11 +8,10 @@ var app = require('loopback');
 require('./')(app);
 
 var ds = app.createDataSource({
-  connector: app.Memory
+  connector: app.Memory,
 });
 
-describe('loopback edge arangodb', function () {
-
+describe('loopback edge arangodb', function() {
   var Friend = ds.createModel('Friend',
     {name: String, type: String},
     {mixins: {Edge: true}}
@@ -23,34 +22,34 @@ describe('loopback edge arangodb', function () {
     {mixins: {Edge: {_id: 'completeId', _from: 'from', _to: 'to'}}}
   );
 
-  it('default name for fields _id, _from and _to', function (done) {
+  it('default name for fields _id, _from and _to', function(done) {
     var properties = Friend.definition.properties;
     var _id = properties._id;
     should.exist(_id);
-    _id.type.should.be.String;
+    _id.type.should.be.equal(String);
     var _from = properties._from;
     should.exist(_from);
-    _from.type.should.be.String;
+    _from.type.should.be.equal(String);
     _from.required.should.equal(true);
     var _to = properties._to;
     should.exist(_to);
-    _to.type.should.be.String;
+    _to.type.should.be.equal(String);
     _to.required.should.equal(true);
     done();
   });
 
-  it('custom name for fields _id, _from and _to', function (done) {
+  it('custom name for fields _id, _from and _to', function(done) {
     var properties = CustomFriend.definition.properties;
     var completeId = properties.completeId;
     should.exist(completeId);
-    completeId.type.should.be.String;
+    completeId.type.should.be.equal(String);
     var from = properties.from;
     should.exist(from);
-    from.type.should.be.String;
+    from.type.should.be.equal(String);
     from.required.should.equal(true);
     var to = properties.to;
     should.exist(to);
-    to.type.should.be.String;
+    to.type.should.be.equal(String);
     to.required.should.equal(true);
     done();
   });
