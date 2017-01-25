@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mrbatista/loopback-edge-arangodb#readme",
   "dependencies": {
+    "debug": "^2.6.0",
     "depd": "^1.1.0",
     "underscore": "^1.8.3"
   },
