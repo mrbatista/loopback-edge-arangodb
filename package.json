@@ -4,7 +4,9 @@
   "description": "A mixin to handle arangoDB edges for loopback Models",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha test.js"
+    "lint": "eslint .",
+    "test": "mocha test.js",
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-loopback": "^7.0.1",
     "loopback": "^2.22.2",
     "mocha": "^2.3.3",
     "should": "^7.1.1"
