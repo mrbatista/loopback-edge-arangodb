@@ -1,13 +1,19 @@
 {
   "name": "loopback-edge-arangodb",
   "version": "1.1.0",
-  "description": "A mixin to handle arangoDB edges for loopback Models",
-  "main": "index.js",
+  "description": "A mixin to handle arangodb edges for loopback models",
+  "main": "dist/index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "mocha test.js",
-    "posttest": "npm run lint"
+    "lint": "eslint lib/**/*.js test/**/*.js",
+    "test": "cross-env NODE_ENV=test nyc mocha",
+    "posttest": "npm run lint && nsp check",
+    "build": "babel src -d dist",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrbatista/loopback-edge-arangodb.git"
@@ -19,15 +25,22 @@
   },
   "homepage": "https://github.com/mrbatista/loopback-edge-arangodb#readme",
   "dependencies": {
-    "debug": "^2.6.0",
-    "depd": "^1.1.0",
-    "underscore": "^1.8.3"
+    "debug": "^3.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "cross-env": "^5.1.1",
     "eslint": "^3.14.0",
-    "eslint-config-loopback": "^7.0.1",
-    "loopback": "^2.22.2",
-    "mocha": "^2.3.3",
-    "should": "^7.1.1"
+    "eslint-config-loopback": "^8.0.0",
+    "loopback-datasource-juggler": "^3.13.0",
+    "mocha": "^4.0.1",
+    "nsp": "^2.8.0",
+    "nyc": "^11.3.0"
   }
 }
