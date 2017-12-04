@@ -1,3 +1,14 @@
 {
-  "extends": "loopback"
+  "env": {
+    "mocha": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": "loopback",
+  "globals": {
+    "should": true
+  }
 }
