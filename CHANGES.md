@@ -1,0 +1,28 @@
+2017-12-04, Version 1.2.0
+=========================
+
+ * es6 (Matteo Padovano)
+
+ * enable travis (Matteo Padovano)
+
+ * migrate to eslint (Matteo Padovano)
+
+
+2015-11-02, Version 1.1.0
+=========================
+
+ * Update version. (Matteo Padovano)
+
+ * Reformat code style. (Matteo Padovano)
+
+ * Added support for _id filed and test. (Matteo Padovano)
+
+ * Added dependency, config file for jscs and jshint code style. (Matteo Padovano)
+
+ * Update README. (Matteo Padovano)
+
+
+2015-10-19, Version 1.0.0
+=========================
+
+ * First release!
