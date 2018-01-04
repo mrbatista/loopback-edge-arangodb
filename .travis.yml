@@ -1,9 +1,25 @@
 language: node_js
+
 node_js:
-  - '4'
   - '6'
   - '8'
+
+env:
+  - ARANGODB_VERSION=3.1
+  - ARANGODB_VERSION=3.2
+
+before_install:
+  - chmod +x ./test/travis/setup_arangodb.sh
+  - ./test/travis/setup_arangodb.sh
+
+after_success:
+  - npm run lint
+  - npm run coverage
+  - npm run nsp
+
+after_script:
+  - ./test/travis/teardown_arangodb.sh
+
 branches:
   only:
     - master
-after_success: npm run coverage
