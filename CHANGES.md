@@ -1,3 +1,9 @@
+2018-01-04, Version 1.3.0
+=========================
+
+ * add Edge collection API (Matteo Padovano)
+
+
 2017-12-04, Version 1.2.0
 =========================
 
