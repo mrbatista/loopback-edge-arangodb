@@ -1,3 +1,9 @@
+2018-01-06, Version 1.3.1
+=========================
+
+ * fix dist build for node 4 and 6 (Matteo Padovano)
+
+
 2018-01-04, Version 1.3.0
 =========================
 
