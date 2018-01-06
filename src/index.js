@@ -1,4 +1,5 @@
 import {deprecate} from 'util';
+
 import edge from './edge';
 
 export default deprecate((app) => {

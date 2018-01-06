@@ -1,6 +1,7 @@
 import assert from 'assert';
-import debug from './debug';
 import Promise from 'bluebird';
+
+import debug from './debug';
 
 export default (Model, options) => {
   options = Object.assign({_id: '_id', _from: '_from', _to: '_to'}, options);
