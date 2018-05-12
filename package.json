@@ -45,14 +45,14 @@
     "coveralls": "^3.0.0",
     "cross-env": "^5.1.1",
     "dirty-chai": "^2.0.1",
-    "eslint": "^3.14.0",
+    "eslint": "^4.18.2",
     "eslint-config-loopback": "^8.0.0",
     "faker": "^4.1.0",
     "loopback": "^3.17.1",
     "loopback-connector-arangodb": "^2.0.2",
     "loopback-datasource-juggler": "^3.13.0",
-    "mocha": "^4.0.1",
-    "nsp": "^2.8.0",
+    "mocha": "^5.0.3",
+    "nsp": "^3.0.0",
     "nyc": "^11.3.0"
   }
 }
