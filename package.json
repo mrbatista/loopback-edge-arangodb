@@ -52,7 +52,7 @@
     "loopback-connector-arangodb": "^2.0.2",
     "loopback-datasource-juggler": "^3.13.0",
     "mocha": "^4.0.1",
-    "nsp": "^2.8.0",
+    "nsp": "^3.0.0",
     "nyc": "^11.3.0"
   }
 }
