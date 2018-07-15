@@ -91,18 +91,21 @@ In this example we change `_id`, `_from` and `_to` to `completeId`, `from` and `
 TESTING
 =============
 
-This package uses `jscs` and `jshint` as pretests to help maintain style and for error checking.
+## Running tests
 
-Run the tests in the `test` directory.
+The tests in this repository are mainly integration tests, meaning you will need
+to run them using our preconfigured test server.
+
+Run the tests:
 
 ```bash
   npm test
 ```
 
-Run with debugging output on:
+Run with debugging output:
 
 ```bash
-  DEBUG='loopback:mixin:edge-arangodb' npm test
+  DEBUG='loopback:mixins:edge-arangodb' npm test
 ```
 
 LICENSE
