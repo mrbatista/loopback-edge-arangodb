@@ -1,3 +1,13 @@
+2018-07-16, Version 1.3.2
+=========================
+
+ * update mixins configuration (Matteo Padovano)
+
+ * update readme (Matteo Padovano)
+
+ * migrate to docker for travis CI (Matteo Padovano)
+
+
 2018-01-06, Version 1.3.1
 =========================
 
