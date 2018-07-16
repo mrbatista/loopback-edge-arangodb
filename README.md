@@ -11,15 +11,16 @@ This module is designed for the [Strongloop Loopback](https://github.com/strongl
 
 `_to` A document handle that identifies the end-point of the edge.
 
-INSTALL
+Install
 =============
 
 ```bash
   npm install --save loopback-edge-arangodb
 ```
 
-MIXINSOURCES
+Mixin sources
 =============
+
 With [loopback-boot@v2.8.0](https://github.com/strongloop/loopback-boot/)  [mixinSources](https://github.com/strongloop/loopback-boot/pull/131) have been implemented in a way which allows for loading this mixin without changes to the `server.js` file previously required.
 
 Add the `mixins` property to your `server/model-config.json` like the following:
@@ -35,14 +36,14 @@ Add the `mixins` property to your `server/model-config.json` like the following:
     ],
     "mixins": [
       "loopback/common/mixins",
-      "../node_modules/loopback-edge-arangodb",
+      "../node_modules/loopback-edge-arangodb/mixins",
       "../common/mixins"
     ]
   }
 }
 ```
 
-CONFIG
+Configuration
 =============
 
 To use with your Models add the `mixins` attribute to the definition object of your model config.
@@ -61,7 +62,7 @@ To use with your Models add the `mixins` attribute to the definition object of y
   }
 ```
 
-BOOT OPTIONS
+Custom options
 =============
 
 The attribute names `_id`, `_from` and `_to` are configurable.  To use different values for the default attribute names add the following parameters to the mixin options.
@@ -88,10 +89,8 @@ In this example we change `_id`, `_from` and `_to` to `completeId`, `from` and `
   }
 ```
 
-TESTING
+Running tests
 =============
-
-## Running tests
 
 The tests in this repository are mainly integration tests, meaning you will need
 to run them using our preconfigured test server.
@@ -108,6 +107,7 @@ Run with debugging output:
   DEBUG='loopback:mixins:edge-arangodb' npm test
 ```
 
-LICENSE
+License
 =============
+
 [MIT](LICENSE)
